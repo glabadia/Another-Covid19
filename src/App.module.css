@@ -2,8 +2,25 @@ body {
   background-color: rgb(250, 250, 250);
 }
 
+.img {
+  width: 370px;
+  margin-top: 2em;
+}
+
 .container {
+  max-width: 95%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+@media (max-width: 770px) {
+  .container {
+    margin: 0 10%;
+  }
+
+  .image {
+    width: 100%;
+  }
 }
